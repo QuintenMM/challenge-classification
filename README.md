@@ -1,16 +1,19 @@
-## Bearing classification challenge on Kaggle
-Given a dataset contains signal recordings to detect defective bearings
+## Bearing classification challenge
 
-### Context
-This dataset is the output from the initial part of work focused on integration of AutoML solutions into the industrial companies by Quantum in collaboration with National Technical University «Kharkiv Polytechnic Institute». Using special device we take signals from the bearings inside with the goal to understand is the current bearing whole or defective. As the result, this dataset contains two files:
+### Mission
+Our mission is to make an automated bearing testing system and to create a model in order to execute in a scheduled maintenance system. 
 
- - bearing_signals.csv. Contains signals recordings.
- - bearing_classes.csv. Classes whole or defective for every bearing.
 ### Content
-![](/Visuals/bearing_explanation.jpeg)
-For the experiments device shown on the picture was constructed. Two bearings were installed on the shaft. The rotation speed changed from 0 to 1500 rpm, was held for 10 seconds, and decreased to 250 rpm. The shaft was rotated using an DC motor connected to the shaft through a coupling. A radial load of 3.5 kg is applied to the shaft using a balanced weight.
-The bearings were mounted on the shaft as shown in Figure 1. GY-61 ADXL3353 accelerometers were mounted on the bearing housing The sensor location is also shown in Figure. The recording was saved along the x, y, z axes.
-
+![](https://i.postimg.cc/gkgJGTnj/1.jpg)
+ - For the experiments device shown on the picture was constructed. Two bearings were installed on the shaft. The rotation speed changed from 0 to 1500 rpm, was held for 10 seconds, and decreased to 250 rpm. 
+ - The shaft was rotated using an DC motor connected to the shaft through a coupling. A radial load of 3.5 kg is applied to the shaft using a balanced weight.
+The bearings were mounted on the shaft as shown in Figure 1. 
+- GY-61 ADXL3353 accelerometers were mounted on the bearing housing 
+- The sensor location is also shown in Figure. 
+- The recording was saved along the x, y, z axes.
+##### Datasets: 
+   - bearing_signals.csv. Contains signals recordings.
+   - bearing_classes.csv. Classes whole or defective for every bearing.
 
 ### Credits
 * Anne Jungers (@Annejungers)
