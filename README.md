@@ -30,21 +30,28 @@ Below are provided the steps that were followed for this project. Each step and 
          - Target: status of bearings 
  - 3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
-### Classification techniques
-Classification techniques together with the relative scores.
-Classifier	Test set score	CV score	Kaggle score
-KNN	-	-	-
-Logistic Regression	-	0.82	0.78947
-Neural Networks	-	-	-
-Random Forest	0.82	0.84	0.79425
-Support Vector Machines	0.85	0.84	0.80861
-Perceptron	0.78	-	0.62679
-Naive Bayes	0.78	0.80	0.76076
+### Classification techniques with the relative scores
+- Option 1: 
+| Classifier	Test          | Set score  | CV score|
+|--------------------------|------------|---------|
+
+|KNN	|-	|-	|
+|Logistic Regression|	0.82	|0.78947|
+|Random Forest	|0.82	|0.84	|
+|Support Vector Machines	| 0.85	|0.84	|
+|Perceptron	|0.78	|0.62679|
+|Naive Bayes	|0.78	|0.80	|
 
 ### Folder structures
 * \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
 * \Data contains the project dataset given in the Kaggle challenge
 * \Data\outputs contains the outputs given by the classifiers that were submitted to Kaggle
+| File                     | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| final_df.csv                | Final csv file, cleaned and ready for machine learning. |
+| 1.challenge-classification1.ipynb      | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
+| 2.challenge-classification2.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>Contains data showing injuries, deaths and cause of accident.          |
+| 3.README.md           | Information on the assignment                                               |  
 
 ### Installation instructions
 1. Install Python and clone this repository
