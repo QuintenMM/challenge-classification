@@ -13,7 +13,7 @@ The bearings were mounted on the shaft as shown in Figure 1. GY-61 ADXL3353 acce
 
 
 ### Credits
-* Anna Jungers (@Annejungers)
+* Anne Jungers (@Annejungers)
 * Hoang Minh (@Minh6019)
 * Minh Hien (@minhhienvo368)
 * Quinten (@QuintenMM)
