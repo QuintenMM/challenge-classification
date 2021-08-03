@@ -37,9 +37,9 @@ Below are provided the steps that were followed for this project. Each step and 
   | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
   |---------------------|------------|------------|---------|
   |KNN	|k=5	| 0.95 	| 0.94	|
-  |KNN with validation|	0.95	|0.94 |
-  |KNN wuth GridSearchCV	|0.95	|0.98	|
-  |Random Forest with GridSearchCV	| 0.95	| 1.0	|
+  |KNN with validation|	k=5	|0.95 |0.94 |
+  |KNN wuth GridSearchCV	| k=5	|0.95	|0.98 |
+  |Random Forest with GridSearchCV	| k=5	| 0.95	|1.0 |
   
   
   - Option 2: Features: 
