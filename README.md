@@ -41,6 +41,12 @@ Below are provided the steps that were followed for this project. Each step and 
   |KNN wuth GridSearchCV	| k=1	|0.95	|0.98 |
   |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
   
+- Option 2:
+  | Classifier Test | Parameter | F1-Score | CV_ROC_AUC_score |
+  | ----------------|-----------|----------|------------------|
+  |KNN| k=5| 0.95|
+  |KNN with validation | k=6
+  |KNN with GridSearchCV| k=4|
 #### Conclusion:
 With the model Random Forest, GridSearchCV is the highest score. 
 
