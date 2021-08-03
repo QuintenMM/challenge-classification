@@ -23,8 +23,7 @@ Below are provided the steps that were followed for this project. Each step and 
  1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
  2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Option 1: 
-         - Feature selection: 5 new representative features (i.e. min, max, median) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w)
-         - In each feature, we made new features with min, max, mean, std and median. At the end, we have 45 features.  
+         - Feature selection: 5 new representative features (i.e. min, max, median, std, mean) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w). We have 45 features.  
          - Target: status of bearings
   
     - Option 2: 
@@ -40,23 +39,16 @@ Below are provided the steps that were followed for this project. Each step and 
   |KNN with validation|	k=5	|0.95 |0.94 |
   |KNN wuth GridSearchCV	| k=1	|0.95	|0.98 |
   |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
-  
+  #### Conclusion:
+With the model Random Forest, GridSearchCV is the highest score.
+
 - Option 2:
   | Classifier Test | Parameter | F1-Score | CV_ROC_AUC_score |
   | ----------------|-----------|----------|------------------|
-  |KNN| k=5| 0.95|
-  |KNN with validation | k=6
-  |KNN with GridSearchCV| k=4|
-#### Conclusion:
-With the model Random Forest, GridSearchCV is the highest score. 
-
-  - Option 2: 
-  | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
-  |---------------------|------------|------------|---------|
-  |KNN	|k=5	| 0.81 	| 0.56	|
-  |KNN with validation|	k=5	|0.81 |0.56 |
-  |KNN wuth GridSearchCV	| k=1	|0.91	|0.87 |
-  |Random Forest with GridSearchCV	| k=100,200	| 0.85	|0.94|
+  |KNN| k=5| 0.81| 0.56|
+  |KNN with validation | k=5| 0.81|0.56|
+  |KNN with GridSearchCV| k=4|0.91|0.87|
+  |Random Forest with GridSearchCV| K=100,200|0.85|0.94|
  
  #### Conclusion:
 With the model Random Forest, GridSearchCV is the highest score. 
@@ -70,7 +62,7 @@ With the model Random Forest, GridSearchCV is the highest score.
   |--------------------------|-----------------------------------------------------------------------------|
   | final_df.csv             | Final csv file, cleaned and ready for machine learning. |
   | 1.challenge-classification_01.ipynb   | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
-  | 2.challenge-classification2.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>|
+  | 2.challenge-classification_02.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>|
   | 3.README.md           | Information on the assignment                   |  
 
 ### Installation instructions
