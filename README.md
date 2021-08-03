@@ -41,6 +41,8 @@ Below are provided the steps that were followed for this project. Each step and 
   |KNN wuth GridSearchCV	| k=1	|0.95	|0.98 |
   |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
   
+#### Conclusion:
+With the model Random Forest, GridSearchCV is the highest score. 
   
   - Option 2: Features: 
   | Classifier	Test     | Set score  | CV score|
