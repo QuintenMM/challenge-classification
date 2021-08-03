@@ -59,8 +59,6 @@ With the model Random Forest, GridSearchCV is the highest score.
 
 ### Folder structures
 * \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
-* \Data contains the project dataset given in the Kaggle challenge
-* \Data\outputs contains the outputs given by the classifiers that were submitted to Kaggle
   | File                     | Description                                                                 |
   |--------------------------|-----------------------------------------------------------------------------|
   | final_df.csv             | Final csv file, cleaned and ready for machine learning. |
