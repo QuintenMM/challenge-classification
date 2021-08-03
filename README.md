@@ -2,6 +2,7 @@
 
 ### Mission
 Our mission is to make an automated bearing testing system and to create a model in order to execute in a scheduled maintenance system. 
+The goal is to find the more convenient algorithm to make some predictions about this system. 
 
 ### Content
 ![](https://i.postimg.cc/gkgJGTnj/1.jpg)
