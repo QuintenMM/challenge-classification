@@ -32,15 +32,14 @@ Below are provided the steps that were followed for this project. Each step and 
 
 ### Classification techniques with the relative scores
 - Option 1: 
-| Classifier	Test          | Set score  | CV score|
-|--------------------------|------------|---------|
-
-|KNN	|-	|-	|
-|Logistic Regression|	0.82	|0.78947|
-|Random Forest	|0.82	|0.84	|
-|Support Vector Machines	| 0.85	|0.84	|
-|Perceptron	|0.78	|0.62679|
-|Naive Bayes	|0.78	|0.80	|
+  | Classifier	Test     | Set score  | CV score|
+  |---------------------|------------|---------|
+  |KNN	|-	|-	|
+  |Logistic Regression|	0.82	|0.78947|
+  |Random Forest	|0.82	|0.84	|
+  |Support Vector Machines	| 0.85	|0.84	|
+  |Perceptron	|0.78	|0.62679|
+  |Naive Bayes	|0.78	|0.80	|
 
 ### Folder structures
 * \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
