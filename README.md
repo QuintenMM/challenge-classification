@@ -24,8 +24,9 @@ Below are provided the steps that were followed for this project. Each step and 
  2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Option 1: 
          - Feature selection: 5 new representative features (i.e. min, max, median) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w)
-         - In each feature, we made new features with min, max, mean, std and median
+         - In each feature, we made new features with min, max, mean, std and median. At the end, we have 45 features.  
          - Target: status of bearings
+  
     - Option 2: 
          - Feature selection: 12 representative features (i.e. min, max, median) derived from the orginal features (a1_y, a2_y, hz: range of (22-25.5))
          - Target: status of bearings 
@@ -33,14 +34,13 @@ Below are provided the steps that were followed for this project. Each step and 
 
 ### Classification techniques with the relative scores
 - Option 1: Features:
-  | Classifier	Test     | Parameter  | Set score  | CV score|
+  | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
   |---------------------|------------|------------|---------|
-  |KNN	|k	|-	|
-  |Logistic Regression|	0.82	|0.78947|
-  |Random Forest	|0.82	|0.84	|
-  |Support Vector Machines	| 0.85	|0.84	|
-  |Perceptron	|0.78	|0.62679|
-  |Naive Bayes	|0.78	|0.80	|
+  |KNN	|k=5	| 	| 	|
+  |KNN with validation|	0.82	|0.78947|
+  |KNN wuth GridSearchCV	|0.82	|0.84	|
+  |Random Forest with GridSearchCV	| 0.85	|0.84	|
+  
   
   - Option 2: Features: 
   | Classifier	Test     | Set score  | CV score|
