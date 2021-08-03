@@ -20,18 +20,28 @@ The bearings were mounted on the shaft as shown in Figure 1. GY-61 ADXL3353 acce
 
 ### Method
 Below are provided the steps that were followed for this project. Each step and classifiers have their own document.
- - 1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
- - 2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
+ 1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
+ 2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Option 1: 
          - Feature selection: 5 new representative features (i.e. min, max, median) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w)
          - Target: status of bearings
     - Option 2: 
          - Feature selection: 12 representative features (i.e. min, max, median) derived from the orginal features (a1_y, a2_y, hz: range of (22-25.5))
          - Target: status of bearings 
- - 3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
+ 3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
 ### Classification techniques with the relative scores
-- Option 1: 
+- Option 1: Features:
+  | Classifier	Test     | Set score  | CV score|
+  |---------------------|------------|---------|
+  |KNN	|-	|-	|
+  |Logistic Regression|	0.82	|0.78947|
+  |Random Forest	|0.82	|0.84	|
+  |Support Vector Machines	| 0.85	|0.84	|
+  |Perceptron	|0.78	|0.62679|
+  |Naive Bayes	|0.78	|0.80	|
+  
+  - Option 2: Features: 
   | Classifier	Test     | Set score  | CV score|
   |---------------------|------------|---------|
   |KNN	|-	|-	|
