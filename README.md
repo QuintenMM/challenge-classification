@@ -45,12 +45,12 @@ Below are provided the steps that were followed for this project. Each step and 
 * \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
 * \Data contains the project dataset given in the Kaggle challenge
 * \Data\outputs contains the outputs given by the classifiers that were submitted to Kaggle
-| File                     | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| final_df.csv                | Final csv file, cleaned and ready for machine learning. |
-| 1.challenge-classification1.ipynb      | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
-| 2.challenge-classification2.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>Contains data showing injuries, deaths and cause of accident.          |
-| 3.README.md           | Information on the assignment                                               |  
+  | File                     | Description                                                                 |
+  |--------------------------|-----------------------------------------------------------------------------|
+  | final_df.csv             | Final csv file, cleaned and ready for machine learning. |
+  | 1.challenge-classification1.ipynb   | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
+  | 2.challenge-classification2.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>|
+  | 3.README.md           | Information on the assignment                   |  
 
 ### Installation instructions
 1. Install Python and clone this repository
