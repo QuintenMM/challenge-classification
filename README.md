@@ -1,104 +1,51 @@
-# GNT-Arai-2.31-Anne-Jungers
-work on Python
-# challenge-classification
-# Comparison of classifiers
+## Bearing classification challenge on Kaggle
+Given a dataset contains signal recordings to detect defective bearings
 
-- Repository: `challenge-classification`
-- Type of Challenge: `Learning`
-- Duration: `4 days`
-- Deadline: `dd/mm/yy H:i AM/PM`
-- Team challenge : `team` (4)
+### Context
+This dataset is the output from the initial part of work focused on integration of AutoML solutions into the industrial companies by Quantum in collaboration with National Technical University «Kharkiv Polytechnic Institute». Using special device we take signals from the bearings inside with the goal to understand is the current bearing whole or defective. As the result, this dataset contains two files:
 
-## Learning Objectives
+ - bearing_signals.csv. Contains signals recordings.
+ - bearing_classes.csv. Classes whole or defective for every bearing.
+### Content
+For the experiments device shown on the picture was constructed. Two bearings were installed on the shaft. The rotation speed changed from 0 to 1500 rpm, was held for 10 seconds, and decreased to 250 rpm. The shaft was rotated using an DC motor connected to the shaft through a coupling. A radial load of 3.5 kg is applied to the shaft using a balanced weight.
+The bearings were mounted on the shaft as shown in Figure 1. GY-61 ADXL3353 accelerometers were mounted on the bearing housing The sensor location is also shown in Figure. The recording was saved along the x, y, z axes.
 
-You will learn to implement different classification algorithms in Python.
-At the end of the challenge, you will be able to:
 
-- Choose the most appropriate algorithm, depending on the problem.
-- Know the know-how, way to implement and logic behind most common classifiers.
-- Manipulate different types of data.
+### Credits
+* Anna Jungers (@Annejungers)
+* Hoang Minh (@Minh6019)
+* Minh Hien (@minhhienvo368)
+* Quinten (@QuintenMM)
 
-## The Mission
+### Method
+Below are provided the steps that were followed for this project. Each step and classifiers have their own document.
+ - 1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
+ - 2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
+    - Option 1: 
+         - Feature selection: 5 new representative features (i.e. min, max, median) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w)
+         - Target: status of bearings
+    - Option 2: 
+         - Feature selection: 12 representative features (i.e. min, max, median) derived from the orginal features (a1_y, a2_y, hz: range of (22-25.5))
+         - Target: status of bearings 
+ - 3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
-You're part of a team of sweaty mechanics, working with machines all day. You're not mechanically inclined though, you're hired to make an **automated bearing testing system**. Your colleagues made the testing machine, you're here to process the data.
-A client has asked you to make a model to use in an scheduled maintenance system. A sample of the bearings in use of their new-fangled machine would be tested, and your model would predict whether a bearing is **faulty or **not**.
+### Classification techniques
+Classification techniques together with the relative scores.
+Classifier	Test set score	CV score	Kaggle score
+KNN	-	-	-
+Logistic Regression	-	0.82	0.78947
+Neural Networks	-	-	-
+Random Forest	0.82	0.84	0.79425
+Support Vector Machines	0.85	0.84	0.80861
+Perceptron	0.78	-	0.62679
+Naive Bayes	0.78	0.80	0.76076
 
-The [dataset](https://www.kaggle.com/isaienkov/bearing-classification?select=bearing_signals.csv) is quite hefty, so you'd do well to discuss with your team while it downloads.
+### Folder structures
+* \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
+* \Data contains the project dataset given in the Kaggle challenge
+* \Data\outputs contains the outputs given by the classifiers that were submitted to Kaggle
 
-### Must-have features
-
-- Fit at least one classification model on the data.
-- Have a clean dataset to work with.
-- Your code should be commented.
-- Your code should be cleaned of any commented unused code.
-- Your readme file contains relevant visualizations.
-- Each function or class has to contain a docstring formatted like this:
-
-```python
-def add(number_one: int, number_two: int) -> int:
-    """
-    Function that will perform the add operation between two numbers (in params).
-
-    :param number_one: An int that will be added to the second parameter.
-    :param number_two: An int that will be added to the fist parameter.
-    :return: An int that is the result of the two params being added to each other.
-    """
-    result = number_one + number_two
-    return result
-```
-
-### Nice-to-have features
-
-- Perform a grid search to tune a models' parameters.
-- test multiple classification models and compare the performance.
-- Show the comparison of your models' evaluation metrics.
-
-## Deliverables
-
-1. Publish your source code on the GitHub repository.
-2. The deployment link, if applicable.
-3. Pimp up the README file:
-   - Description
-   - Installation
-   - Usage
-   - (Visuals)
-   - (Contributors)
-   - (Timeline)
-   - (Personal situation)
-
-## Miscellaneous
-
-- A typical classification project has the following timeline:
-  - Data gathering
-  - Data preprocessing
-  - Choose a model
-  - Training
-  - Evaluation of the model
-  - Tuning of hyper-parameters
-  - Prediction
-  - (Deployment)
-
-### Steps
-
-1. Create the repository.
-2. Study the request (What & Why ?)
-3. Identify technical challenges (How ?)
-4. Implement different classifiers.
-5. Compare the results to find the more convenient algorithm.
-
-## Evaluation criteria
-
-| Criteria       | Indicator                                                               | Yes/No |
-| -------------- | ----------------------------------------------------------------------- | ------ |
-| 1. Is complete | At least 1 classifier was used.                             |        |
-|                | Code re-use was limited using functions and classes.                    |        |
-|                | There is a published GitHub repo with those.                            |        |
-| 2. Is correct  | It recognized correctly the test data.                                  |        |
-|                | multiple models were compared between each other and a conclusion was drawn. |        |
-| 3. Is clean    | There is good documentation in the project.                             |        |
-|                | The code is formatted nicely.                                           |        |
-
-## A final note of encouragement
-
-![You've got this!](https://media.giphy.com/media/idUgpCC6XLoK0ZNZ2o/giphy.gif)
-
+### Installation instructions
+1. Install Python and clone this repository
+2. Install required Python modules with pip install -r requirements.txt
+to run the jupyter's notebooks just go with jupyter notebook
