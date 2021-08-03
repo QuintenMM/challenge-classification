@@ -61,7 +61,7 @@ With the model Random Forest, GridSearchCV is the highest score.
   | File                     | Description                                                                 |
   |--------------------------|-----------------------------------------------------------------------------|
   | final_df.csv             | Final csv file, cleaned and ready for machine learning. |
-  | 1.challenge-classification1.ipynb   | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
+  | 1.challenge-classification_01.ipynb   | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
   | 2.challenge-classification2.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>|
   | 3.README.md           | Information on the assignment                   |  
 
