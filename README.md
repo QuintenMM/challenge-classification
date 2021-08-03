@@ -33,7 +33,7 @@ Below are provided the steps that were followed for this project. Each step and 
  3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
 ### Classification techniques with the relative scores
-- Option 1: Features:
+- Option 1: 
   | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
   |---------------------|------------|------------|---------|
   |KNN	|k=5	| 0.95 	| 0.94	|
@@ -50,7 +50,10 @@ With the model Random Forest, GridSearchCV is the highest score.
   |KNN	|k=5	| 0.81 	| 0.56	|
   |KNN with validation|	k=5	|0.81 |0.56 |
   |KNN wuth GridSearchCV	| k=1	|0.91	|0.87 |
-  |Random Forest with GridSearchCV	| k=100,200	| 0.847	|0.938|
+  |Random Forest with GridSearchCV	| k=100,200	| 0.85	|0.94|
+ 
+ #### Conclusion:
+With the model Random Forest, GridSearchCV is the highest score. 
   
 
 ### Folder structures
