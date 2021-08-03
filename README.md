@@ -28,7 +28,7 @@ Below are provided the steps that were followed for this project. Each step and 
          - Target: status of bearings
   
     - Option 2: 
-         - Feature selection: 12 representative features (i.e. min, max, median) derived from the orginal features (a1_y, a2_y, hz: range of (22-25.5))
+         - Feature selection: 12 representative features (i.e. min, max, median, std, entropy, impulse factor, margin factor, frequency center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency,crest_factor) derived from the orginal features (a1_y, a2_y,  hz: range of (24-25.5))
          - Target: status of bearings 
  3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
@@ -44,15 +44,14 @@ Below are provided the steps that were followed for this project. Each step and 
 #### Conclusion:
 With the model Random Forest, GridSearchCV is the highest score. 
   
-  - Option 2: Features: 
-  | Classifier	Test     | Set score  | CV score|
-  |---------------------|------------|---------|
-  |KNN	|-	|-	|
-  |Logistic Regression|	0.82	|0.78947|
-  |Random Forest	|0.82	|0.84	|
-  |Support Vector Machines	| 0.85	|0.84	|
-  |Perceptron	|0.78	|0.62679|
-  |Naive Bayes	|0.78	|0.80	|
+  - Option 2: 
+  | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
+  |---------------------|------------|------------|---------|
+  |KNN	|k=5	| 0.81 	| 0.56	|
+  |KNN with validation|	k=5	|0.81 |0.56 |
+  |KNN wuth GridSearchCV	| k=1	|0.91	|0.87 |
+  |Random Forest with GridSearchCV	| k=100,200	| 0.847	|0.938|
+  
 
 ### Folder structures
 * \ contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
