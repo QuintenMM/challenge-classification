@@ -43,10 +43,9 @@ Below are provided the steps that were followed for this project. Each step and 
   |KNN with validation|	k=5	|0.95 |0.94 |
   |KNN wuth GridSearchCV	| k=1	|0.95	|0.98 |
   |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
-  #### Conclusion:
-With the model Random Forest, GridSearchCV is the highest score.
+  #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score.
 
-- Option 2:
+- Option 2:s
   | Classifier Test | Parameter | F1-Score | CV_ROC_AUC_score |
   | ----------------|-----------|----------|------------------|
   |KNN| k=5| 0.81| 0.56|
@@ -54,8 +53,7 @@ With the model Random Forest, GridSearchCV is the highest score.
   |KNN with GridSearchCV| k=4|0.91|0.87|
   |Random Forest with GridSearchCV| K=100,200|0.85|0.94|
  
- #### Conclusion:
-With the model Random Forest, GridSearchCV is the highest score. 
+ #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score. 
   
 
 ### Folder structures
