@@ -28,6 +28,8 @@ Below are provided the steps that were followed for this project. Each step and 
 ![](plot/acceleration_x.png)
 ![](plot/acceleration_y.png)
 ![](plot/acceleration_z.png)
+![](time_distribution.png)
+
 
  3. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Option 1: 
