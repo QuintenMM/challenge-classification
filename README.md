@@ -25,7 +25,9 @@ The bearings were mounted on the shaft as shown in Figure 1.
 ### Method
 Below are provided the steps that were followed for this project. Each step and classifiers have their own document.
  1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
- 2. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
+![](plot/acceleration_x.png)
+
+ 3. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
     - Option 1: 
          - Feature selection: 5 new representative features (i.e. min, max, median, std, mean) derived from the orginal features (timestamp, a1_x, a2_x, a1_y, a2_y, a1_z, a2_z, hz, w). We have 45 features.  
          - Target: status of bearings
