@@ -24,11 +24,18 @@ The bearings were mounted on the shaft as shown in Figure 1.
 
 ### Method
 Below are provided the steps that were followed for this project. Each step and classifiers have their own document.
- 1. Data visualization: data analysis to understand missing values, data relations and usefulness of features
+
+ 1. Data visualization: ploting data to detect missing values, outliers, data relations and usefulness of features
+
+![](plot/Distribution_vibration.png)
+
 ![](plot/acceleration_x.png)
 ![](plot/acceleration_y.png)
 ![](plot/acceleration_z.png)
 ![](plot/time_distribution.png)
+
+We detected the outliers of data in Hert[Hz] column
+![](plot/boxplot_hert.png)
 
 
  3. Preprocessing: with the knowledge acquired with the preceding step, apply preprocessing of data including dealing with missing values, drop unuseful features and build new features
