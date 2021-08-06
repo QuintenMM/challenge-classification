@@ -34,7 +34,7 @@ Below are provided the steps that were followed for this project. Each step and 
 ![](plot/acceleration_z.png)
 ![](plot/time_distribution.png)
 
-We detected the outliers of data in Hert[Hz] column
+We detected the outliers of data in Hertz[Hz] column, the majority data in this column distributes from 0 to 25.5
 ![](plot/boxplot_hert.png)
 
 
