@@ -68,16 +68,17 @@ We detected the outliers of data in Hertz[Hz] column, the majority data in this 
   |KNN with validation | k=5| 0.91|0.84|
   |KNN with GridSearchCV| k=4|0.91|0.87|
   |Random Forest with GridSearchCV| K=100,200|0.87|0.95|
+
    ![](plot/Knn_plot.png)
 
- #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score. 
+#### Conclusion: With the model Random Forest, GridSearchCV gives the highest score. 
   
 
 ### Folder structures
 * Contains all of the jupyter's notebooks including classifiers, preprocessing and data visualization
   | File                     | Description                                                                 |
   |--------------------------|-----------------------------------------------------------------------------|
-  | plot folder            | Contain images of plots |
+  | plot folder            | Contains plots' images|
   | 1.challenge-classification_01.ipynb   | Python code written in "Jupyter Notebook"  <br>Code used to get the data ready for Machine Learning.  |
   | 2.challenge-classification_02.ipynb | Python code written in "Jupyter Notebook" <br>More in depth version. <br>|
   | 3.README.md           | Information on the assignment                   |  
