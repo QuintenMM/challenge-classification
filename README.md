@@ -44,30 +44,30 @@ We detected the outliers of data in Hertz[Hz] column, the majority data in this 
          - Target: status of bearings
   
     - Option 2: 
-         - Feature selection: 12 representative features (i.e. min, max, median, std, entropy, impulse factor, margin factor, frequency center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency,crest_factor) derived from the orginal features (a1_y, a2_y,  hz: range of (24-25.5))
-         - Target: status of bearings 
+         - Feature selection: 12 representative features (i.e. min, max, median, std, entropy, impulse factor, margin factor, frequency center, mean_square_frequency, root_mean_square_frequency, root_variance_frequency,crest_factor) derived from the orginal features (a1_x, a2_x, a1_y, a2_y, a1_z, a2_z,  hz: range of (24-25.5))
+         - Target: status of bearings {1: good, 0: bad}
  3. Classifier: build classifiers based on the preprocessed data using a variety of techniques
 
 ### Classification techniques with the relative scores
-- Option 1: 
+- Option 1: 45 features
   | Classifier	Test     | Parameter  | F1-score  | CV_ROC_AUC_score|
   |---------------------|------------|------------|---------|
   |KNN	|k=5	| 0.95 	| 0.94	|
   |KNN with validation|	k=5	|0.95 |0.94 |
-  |KNN wuth GridSearchCV	| k=1	|0.95	|0.98 |
+  |KNN with GridSearchCV	| k=1	|0.95	|0.94 |
   |Random Forest with GridSearchCV	| k=100,200	| 0.95	|1.0 |
   
   ![](plot/KNN_validation.png)
   
   #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score.
 
-- Option 2:s
+- Option 2: 84 features
   | Classifier Test | Parameter | F1-Score | CV_ROC_AUC_score |
   | ----------------|-----------|----------|------------------|
-  |KNN| k=5| 0.81| 0.56|
-  |KNN with validation | k=5| 0.81|0.56|
+  |KNN| k=5| 0.91| 0.89|
+  |KNN with validation | k=5| 0.91|0.84|
   |KNN with GridSearchCV| k=4|0.91|0.87|
-  |Random Forest with GridSearchCV| K=100,200|0.85|0.94|
+  |Random Forest with GridSearchCV| K=100,200|0.87|0.95|
  
  #### Conclusion: With the model Random Forest, GridSearchCV gives the highest score. 
   
