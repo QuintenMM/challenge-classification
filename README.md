@@ -87,3 +87,4 @@ We detected the outliers of data in Hertz[Hz] column, the majority data in this 
 1. Install Python and clone this repository
 2. Install required Python modules with pip install -r requirements.txt
 to run the jupyter's notebooks just go with jupyter notebook
+# rainbow-song
