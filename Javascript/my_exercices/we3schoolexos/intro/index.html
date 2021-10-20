@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>BeCode/JavaScript - 1.4: ASV avec confirmation</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+        <link rel="stylesheet" href="../../_shared/css/normalize.css" />
+        <link rel="stylesheet" href="../../_shared/css/styles.css" />
+    </head>
+    <body>
+        <h2>What can Javascript do?</h2>
+
+        <p id="demo"> Javascript can change the value of the src (source) attribute of an image.</p>
+        <button type="button" onclick='document.getElementById("myImage").src ="bulbon.jpg"'>Turn on the light!</button>
+
+        <img id="myImage" src="bulboff.jpg" style="width:100px">
+
+        <button type="button" onclick='document.getElementById("myImage").src ="bulboff.jpg"'>Turn off the light</button>
+
+        <br>
+        <br>
+        <h2> What Can Javascript do?</h2>
+
+        <p id="demo">Javascript can change the style of an HTML element</p>
+
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+        <br>
+        <br>
+        <h2>My first webpage</h2>
+        <p>My first paragraph</p>
+        <p id="lol"></p>
+
+        <script>
+            document.getElementById("lol").innerHTML = 5 + 6;
+        </script>
+
+        <br>
+        <br>
+        <h2>My first webpage</h2>
+        <p>My first paragraph</p>
+        <p id="lol"></p>
+
+        <script>
+            document.write (5 + 6);
+        </script>
+
+        <h2>My first web page</h2>
+        <p>My first paragraph</p>
+        <button type="button" onclick="document.write(5+6)">
+        Try it</button>
+        <br>
+        <br>
+        /* window.alert() = to make an alert box */
+        <script>
+            window.alert(5 + 6);
+        </script>
+        <br>
+        <br>
+        //Debugging
+        <h2>Activate Debugging</h2>
+        <p>F12 on your keyboard will activate debugging</p>
+        <p> Then select "Console" in the debugger menu</p>
+        <p> Then click Run again</p>
+
+        <script>
+            console.log(5+6);
+        </script>
+        <br>
+        <br>
+        // Print window.print()
+
+        <h2>The window.print() Method</h2>
+        <p> Click the button to print the current page. </p>
+        <button onclick="window.print()">Print this page</button>
+
+        <br>
+        <br>
+
+        // JS Statements
+        <h2>JavaScript Statements</h2>
+
+        <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+        <p id="lil"></p>
+
+        <script>
+        let x, y, z;  // Statement 1
+        x = 5;        // Statement 2
+        y = 6;        // Statement 3
+        z = x + y;    // Statement 4
+
+        document.getElementById("lil").innerHTML =
+        "The value of z is " + z + ".";  
+        </script>
+        <br>
+        <br>
+        <h2>JavaScript Statements</h2>
+
+        <p>In HTML, JavaScript statements are executed by the browser.</p>
+        <p id="he"></p>
+
+        <script>
+        document.getElementById("he").innerHTML = "Hello Dolly.";
+        </script>
+
+        <br>
+        <br>
+        // when separated by semi-colons, multiple statements on the line are allowed
+
+        <p> Multiple statements on one line are allowed.</p>
+        <p id="demo1"></p>
+
+        <script>
+            let a, b, c;
+            a = 5; b = 6; c = a + b;
+            document.getElementById("demo1").innerHTML = c;
+        </script>
+
+        // block codes {} 
+        // = to define statements that need to be executed together
+        // ex in functions statements need to be executed together
+        <script>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            function myFunction(){
+                document.getElementById("demo1").innerHTML ="hello Dolly!";
+                document.getElementById("demo2").innerHTML ="how are you doing";
+            }
+        </script>
+        <br>
+        // JS variables
+
+        <p>In this example, x is defined as a variable. Then, x is assigned the value of 6:</p>
+            
+        <p id="dai"></p>
+            
+        <script>
+            let x;
+            x = 6;
+            document.getElementById("dai").innerHTML = x;
+        </script>
+
+        <br>
+        <p>Expressions compute to values.</p>
+
+        <p id="da1"></p>
+
+        <script>
+            document.getElementById("da1").innerHTML = (5 + 6) * 10;
+        </script>
+
+        <br>
+        <p>Expressions compute to values.</p>
+
+        <p id="demo10"></p>
+
+        <script>
+            var x;
+            x = 5;
+            document.getElementById("demo10").innerHTML = x * 10;
+        </script>
+        <br>
+        <h2>JavaScript Expressions</h2>
+
+        <p>Expressions compute to values.</p>
+        
+        <p id="demou"></p>
+        
+        <script>
+        document.getElementById("demou").innerHTML = "John" + " "  + "Doe";
+        </script>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
