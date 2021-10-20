@@ -9,6 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (() => {
     const fruits = [
         "pomme",
@@ -23,5 +24,13 @@
         "cerise",
     ];
 
-    // your code here
+    var btn=document.getElementById('run');
+
+    btn.addEventListener('click', function (){
+        fruits.shift();
+        fruits.pop();
+        fruits.unshift('banane');
+        fruits.push('kiwi');
+        document.write(fruits);
+    })
 })();

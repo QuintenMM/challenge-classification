@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var btn=document.getElementById('run');
+    
+    btn.addEventListener("click", function(){
+        randomColor=('#'+(Math.random()*0xFFFFFF<<0).toString(16));
+        document.body.style.backgroundColor=randomColor;
+    })
 })();

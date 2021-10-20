@@ -26,8 +26,31 @@
 
     btnRed.addEventListener('click', function(){
         document.body.style.backgroundColor=this.id;
+        console.log(btnRed)
+        })
+
+    let btnGreen=document.getElementById('green');
+
+    btnGreen.addEventListener('click', function(){
+        document.body.style.backgroundColor=this.id;
+        console.log(btnGreen)
+        })
+
+    let btnYellow=document.getElementById('yellow');
+
+    btnYellow.addEventListener('click', function(){
+        document.body.style.backgroundColor=this.id;
+        console.log(btnYellow)
+        })
+
+    let btnBlue=document.getElementById('blue');
+
+    btnBlue.addEventListener('click', function(){
+        document.body.style.backgroundColor=this.id;
+        console.log(btnBlue)
         })
 })();
+
 
 
 /*
@@ -62,5 +85,5 @@
     function changeColor(color){
         document.body.style.backgroundColor=color;
     }
-    
+
     */

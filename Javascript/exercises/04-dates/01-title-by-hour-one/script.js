@@ -9,7 +9,38 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+/* Code de Samir aussi correct 
+
+(() => {
+    var btn=document.getElementById("target");
+    var today= new Date();
+    var todayH=today.getHours();
+    
+
+    if(todayH<18){
+        btn.textContent="Bonjour";
+    } else {
+        btn.textContent="Bonsoir";
+    }
+})();
+
+*/
+
+// code de marine 
+
 (() => {
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    // your code here
+        
+    var today = new Date();
+    var hours = today.getHours();
+            
+        if (hours < 18) {
+            document.getElementById("target").innerHTML = "Bonjour";
+        } else {
+            document.getElementById("target").innerHTML = "Bonsoir";
+        }
+
 })();
+
+
+
