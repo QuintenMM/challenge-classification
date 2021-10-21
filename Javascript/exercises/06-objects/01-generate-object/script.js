@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+        var person = {
+            lastname: "Jungers",
+            firstname: "Anne",
+            age: 34,
+            city: "Virton",
+            country: "Belgium",
+        }
+        console.log(person);
+    });
+    
 })();
+
+
+alert("this is an alert box!")

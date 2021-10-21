@@ -27,5 +27,9 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        var filteredFruits = fruits.filter((element,index) => fruits.indexOf(element) == index);
+        console.log(filteredFruits);  
+    });
 })();
+
