@@ -9,13 +9,34 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
 (() => {
-    var cake =prompt("Want some cake");
-    var yeses = ["Yes", "yes", "Y", "y"];
-    if(yeses.includes(cake)){
-        alert("Nice, have some")
-    }
-    else{
-        alert("You don't say no to cake, man")
-    }
+    var question =prompt("It's my birthday, do you want some cake?");
+        if(question == "Yes") {
+            alert("Cool! let's celebrate this!");
+        } else {
+            alert("You don't say no to my birthday cake dude :P");
+        }
+    
 })();
+
+
+
+
+
+// other solution (still need to correct it!!! )
+
+/*
+
+(() => {
+    var question = prompt("It's my birthday, do you want some cake?");
+    const answers = ["Yes", "yes", "Y", "y"];
+        if(question === answers){
+            alert("Cool! let's celebrate this!");
+        } else{
+            alert("You don't say no to my birthday cake dude :P");
+        }
+})();
+
+*/
+

@@ -10,6 +10,6 @@
 // You will have time to focus on it later.
 
 (() => {
-    var nombre =prompt("Enter your name");
-    alert("Hellow, "+ nombre +"!")
+   var name = prompt("Enter your name cuttie!")
+   alert(name)
 })();

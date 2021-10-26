@@ -12,5 +12,14 @@
 (() => {
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+    
+    var btn = document.getElementById('run');
+
+    btn.addEventListener('click', ()=>{
+        var result ={};
+        keys.forEach((keys, i) => result[keys] = values[i]);
+        console.log(result);
+    })
+
+
 })();

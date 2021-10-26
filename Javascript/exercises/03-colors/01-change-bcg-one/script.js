@@ -6,8 +6,42 @@
  * started at 26/10/2018
  */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+//code lionel
+/*
+Set a background color for a document
+document.body.style.backgroundColor = "red";
+
+*/
+
+(() => {
+    let redbtn = document.getElementById("red");
+    let greenbtn = document.getElementById("green");
+    let yellowbtn = document.getElementById("yellow");
+    let bluebtn = document.getElementById("blue");
+
+    redbtn.addEventListener("click", () =>{
+        document.body.style.background ="red";
+    });
+
+    greenbtn.addEventListener("click", () =>{
+        document.body.style.background ="green";
+    });
+
+    yellowbtn.addEventListener("click", () =>{
+        document.body.style.background ="yellow";
+    });
+        
+    bluebtn.addEventListener("click", () =>{
+        document.body.style.background ="blue";
+    });
+    
+})();
+
+
+
+
+
+/*
 
 
 (() => {
@@ -51,7 +85,7 @@
         })
 })();
 
-
+/*
 
 /*
 (() => {

@@ -6,8 +6,23 @@
  * started at 26/10/2018
  */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+// explanation https://www.youtube.com/watch?v=Yem8T8azZko
+
+(() => {
+    var btn =document.getElementById("run");
+
+    btn.addEventListener('click',function(){
+        let color ='#';
+        const random = Math.random().toString(16).slice(2,8);
+        color +=random;
+        document.body.style.backgroundColor = color;
+        document.querySelector('h2').innerText =color;
+    })
+})();
+
+
+// or other code same thing
+/*
 
 (() => {
     var btn=document.getElementById('run');
@@ -17,3 +32,5 @@
         document.body.style.backgroundColor=randomColor;
     })
 })();
+
+*/

@@ -6,9 +6,29 @@
  * started at 08/05/2019
  */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+//Revoir theorie sur Getter et Setter 
 
 (() => {
-    // your code here
+    class Person{
+        constructor (firstname, lastname){
+            this.firstname = firstname;
+            this.lastname = lastname;
+        
+        }
+        get fullName(){
+            return `${this.firsname} ${this.lastname}`;
+        }
+
+        set fullName(val){
+            const parts = val.split(' ');
+            this.firstname = parts[0];
+            this.lastname = parts[1];
+        }
+    }
+    document.getElementById("run").addEventListener("click", () =>{
+        let Person1 = new Person("Anne", "Jungers")
+        console.log(Person1.fullName);
+        Person1.fullName = "Cécile Rizoo";
+        console.log(Person1.fullName)
+    })
 })();

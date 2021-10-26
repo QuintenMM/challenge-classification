@@ -11,9 +11,70 @@
 
 (() => {
     class Animal {
+        constructor(name){
+            this.name = name;
+        }
         sayHello() {
             return `${this.constructor.greeting}! I'm ${this.name}!`;
         }
     }
-    // your code here
+    class Cat extends Animal{
+        static greeting ="Meaouwww";
+        }
+           
+    
+
+    class Dog extends Animal{
+        static greeting ="Wouafff";
+        }
+   
+
+    document.getElementById("run").addEventListener('click', () =>{
+        let Cat1 = new Cat("Kuby");
+        let Dog1 = new Dog("Doge");
+        console.log(Cat1.sayHello())
+        console.log(Dog1.sayHello())
+    })
 })();
+
+
+// other option with super()
+/*
+(() => {
+    class Animal {
+        sayHello() {
+            return `${this.constructor.greeting}! I'm ${this.name}!`;
+        }
+    }
+
+    class Dog extends Animal {
+        static greeting = 'wouf wouf';
+
+        constructor(name) {
+            super(name);
+
+            this.name = name;
+        }
+        
+    }
+
+    class Cat extends Animal {
+        static greeting = 'miaou miaou';
+
+        constructor(name) {
+            super(name);
+
+            this.name = name;
+        }
+        
+    }
+
+    document.getElementById('run').addEventListener('click', () => {
+
+        var chien = new Dog('leChien');
+        var chat = new Cat('leChat');
+        console.log(chien.sayHello());
+        console.log(chat.sayHello());
+    });
+})();
+*/

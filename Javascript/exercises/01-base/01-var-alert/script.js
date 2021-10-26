@@ -10,6 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    var croquetta ="Hellow, World!";
-    alert(croquetta);
+    var x = "You are beautiful, believe in yourself!";
+    alert(x);
+
 })();
+
+

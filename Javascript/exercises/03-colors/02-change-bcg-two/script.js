@@ -6,8 +6,32 @@
  * started at 26/10/2018
  */
 
-// NOTE: don't focus on the existing code structure for now.
-// You will have time to focus on it later.
+/* theory addEventListener
+
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+
+*/
+
+
+(() => {
+    var btn = document.getElementById("run");
+
+    btn.addEventListener("click", () => {
+        var colorful = document.getElementById("color").value;
+        document.body.style.background = colorful;
+    })
+})();
+
+
+
+
+
+/*
 
 
 (() => {
@@ -21,3 +45,5 @@
     })
     
 })();
+
+*/

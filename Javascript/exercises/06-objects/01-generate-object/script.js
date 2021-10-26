@@ -18,7 +18,7 @@
             age: 34,
             city: "Virton",
             country: "Belgium",
-        }
+        };
         console.log(person);
     });
     
